@@ -7,6 +7,10 @@
   transition: ease-in-out 0.3s;
 }
 
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
 .navbar .container {
   display: flex;
   align-items: center;

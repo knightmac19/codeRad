@@ -25,11 +25,10 @@
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/sticky-footer.css" />
   </head>
   <body>
     <div id="pageTop"></div>
-    <nav class="navbar nav">
+    <nav id="topNav" class="navbar nav sticky">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -463,5 +462,28 @@
     </footer>
 
     <a id="scrollUp" href="#pageTop"> <i class="fas fa-arrow-circle-up"></i></a>
+
+    <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        console.log(expanded);
+
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>

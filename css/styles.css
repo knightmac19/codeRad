@@ -51,6 +51,7 @@
 
 .bg-header {
   background-image: url("../assets/imgs/bg-header-1.jpg");
+  padding: var(--size-150) 0;
 }
 
 .video-demo {
@@ -91,8 +92,9 @@
   flex: 1;
 }
 
-.block-text {
-  padding-right: var(--size-50);
+.why-me-wrapper .block-text {
+  padding-right: var(--size-100);
+  max-width: 35rem;
 }
 
 .block-text span {
@@ -169,6 +171,7 @@ span.bg-color-6 {
 .video-demo .block-text h2,
 .video-demo .block-text p {
   color: var(--white);
+  margin: var(--size-50) 0;
 }
 
 .video-btn {
@@ -211,7 +214,7 @@ span.bg-color-6 {
 .price-card {
   background-color: var(--white);
   border-radius: 8px;
-  padding: var(--size-16);
+  padding: var(--size-40) var(--size-16);
 }
 
 .price-card .checked {
@@ -260,6 +263,10 @@ span.bg-color-6 {
 
 .plan-btn-wrapper {
   text-align: center;
+}
+
+.plan-btn-wrapper a {
+  width: 100%;
 }
 
 .testimonials {
@@ -351,6 +358,7 @@ footer .footer-col {
   color: var(--white);
   font-weight: 500;
   margin-bottom: var(--size-16);
+  font-size: var(--size-16);
 }
 
 footer .contact-info {
@@ -380,6 +388,10 @@ footer .contact-info {
   color: #858497;
 }
 
+.services-wrapper h5 {
+  margin-bottom: initial;
+}
+
 .recent-posts {
   display: flex;
   margin-bottom: var(--size-16);
@@ -397,6 +409,7 @@ footer .contact-info {
 .post-inner h6 a {
   color: var(--white);
   font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .post-inner span {

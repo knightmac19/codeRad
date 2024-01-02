@@ -232,7 +232,7 @@ span.bg-color-6 {
 .pricing-table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  gap: var(--size-18);
+  gap: var(--size-30);
   margin: auto;
   align-items: flex-start;
 }
